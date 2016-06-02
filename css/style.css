@@ -170,3 +170,7 @@ body {
     text-align: center;
     font-weight: bold;
 }
+
+.slide-3 {
+    background: "../img/nerds.png" 50% 50%;
+}

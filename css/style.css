@@ -152,3 +152,10 @@ body {
 .slider .nav span.on {
     background: #2098d1;
 }
+
+.slide-desription {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    background: red;
+}

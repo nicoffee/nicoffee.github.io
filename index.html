@@ -3,60 +3,63 @@
 <head>
 	<link href="css/style.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<meta charset="UTF-8">
 	<title>Nikolay Fedoseev | front-end developer</title>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
 	<header class="main-header">
-		<div class="container clearfix">
+		<div class="container">
 			<a class="name-wrapper" href="index.html">
 				<h1 class="name-wrapper__name">Fedoseev Nikolay</h1>
 				<p class="name-wrapper__position">front-end developer</p>
 			</a>
 			<nav class="navigation">
 				<ul class="navigation-list">
-					<li><a href="#">about</a></li>
-					<li><a href="#">portfolio</a></li>
-					<li><a href="#">contact me</a></li>
+					<li><a href="index.html" id="about">about</a></li>
+					<li><a href="portfolio.html" id="portfolio">portfolio</a></li>
+					<li><a href="contact.html" id="contact">contact me</a></li>
 				</ul>
 			</nav>
-			<div class="lang-switcher"></div>
 		</div>
 	</header>
 
 	<main class="page-content container">
 		<section class="page-content__about">
-			<h2 class="page-content__about__title">Hello, this is my personal portfolio site</h2>
-			<p class="page-content__about__subtitle">I'm a begginer front-end developer</p>
-			<p class="page-content__about__scills-title">My current skills:</p>
-			<ul class="page-content__about__skills">
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>JavaScript</li>
-				<li>JQuery</li>
-				<li>LESS</li>
-				<li>BEM</li>
-				<li>Bootstrap</li>
-			</ul>
-		</section>
+			<h2 class="about-title">Hello, this is my personal portfolio site</h2>
+			<p class="about">I'm a begginer front-end developer</p>
+			<p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas explicabo iste quo maiores tempora, vitae excepturi ut sunt esse veritatis vel at modi praesentium commodi reprehenderit nam molestias sequi!</p>
+			<p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas explicabo iste quo maiores tempora, vitae excepturi ut sunt esse veritatis vel at modi praesentium commodi reprehenderit nam molestias sequi!</p>
+			<p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas explicabo iste quo maiores tempora, vitae excepturi ut sunt esse veritatis vel at modi praesentium commodi reprehenderit nam molestias sequi!</p>
+			<p class="about about-skills">My current skills (click to toggle tree branch):</p>
 			
-		<div class="slider">
-			<ul>
-				<li class="slide-1"><p class="slide-desription">Static, HTML+CSS+Js</p><a href="http://nicoffee.github.io/nerds/index.html"><img src="img/nerds.png" alt="nerds"></a></li>
-				<li class="slide-2"><p class="slide-desription">Static, HTML+CSS+Js</p><a href="http://nicoffee.github.io/technomart/index.html"><img src="img/technomart.png" alt="technomart"></a></li>
-				<li class="slide-3"><p class="slide-desription">Responsive design, mobile-first, BEM-naming</p><a href="http://nicoffee.github.io/pink/index.html"><img src="img/pink.png" alt="pink"></a></li>
+			<ul class="tree">
+				<li>HTML+CSS
+					<ul>
+            			<li>Responsive</li>
+            			<li>Mobile-first</li>
+            			<li>BEM-naming</li>
+            			<li>SASS</li>
+          			</ul>
+          		</li>
+				<li>JavaScript
+					<ul>
+            			<li>PureJS</li>
+            			<li>JQuery</li>
+          			</ul>
+				</li>
+				<li>Photoshop*</li>
 			</ul>
-		</div>
+
+			<p class="about__note">*just for loolz</p>
+
+		</section>
 	</main>
-	
-	<footer class="main-footer">
-		<div class="social-buttons">
-			<a href="#" class="socail-gh"></a>
-			<a href="#" class="socail-vk"></a>
-			<a href="#" class="socail-fb"></a>
-		</div>
-	</footer>
+
+	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
+	<!-- <script type="text/javascript" src="js/changeContent.js"></script> -->
+	<script type="text/javascript" src="js/tree.js"></script>
 </body>
 </html>

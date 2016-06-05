@@ -15,8 +15,24 @@ body {
     src: url(../font/8784.ttf); /* Путь к файлу со шрифтом */
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
 p {
     font-size: 24px;
+}
+
+.section-1 {
+   height: 730px;
+}
+
+.section-2 {
+   background: #e9ebde;
+   height: 100vh;
+   display: flex;
 }
 
 .container {
@@ -103,7 +119,7 @@ p {
 }
 
 .navigation-list {
-    margin: 0;
+    margin-top: 17px;
     padding: 0;
 
     list-style: none;
@@ -116,6 +132,8 @@ p {
     margin-right: 0px;
 
     font-size: 18px;
+
+    cursor: pointer;
 }
 
 .navigation-list a {
@@ -266,9 +284,6 @@ p {
     font-size: 50px;
 }
 
-.about {
-    text-transform: none;
-}
 
 .about-skills {
     font-weight: bold;
@@ -284,7 +299,7 @@ p {
     display: block;
     width: 400px;
     height: 300px;
-    opacity: 0.3;
+    opacity: 0.5;
 
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition-duration: 1s;
@@ -435,4 +450,14 @@ i:last-child {
 
 .navigation-list .ru {
     display: none;
+}
+
+.section-1 {
+   padding-top: 150px !important;
+
+   margin-bottom: 150px;
+}
+
+p.about {
+    text-transform: none;
 }

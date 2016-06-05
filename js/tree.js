@@ -14,7 +14,7 @@ var tree = document.querySelector('.tree');
 
     for (var i = 0; i < treeUls.length; i++) {
     	treeUls[i].hidden = true;
-  	}
+  	};
 
     /* catch clicks on whole tree */
     tree.onclick = function(event) {

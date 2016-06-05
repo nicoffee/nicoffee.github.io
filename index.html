@@ -12,27 +12,51 @@
 	<header class="main-header">
 		<div class="container">
 			<a class="name-wrapper" href="index.html">
-				<h1 class="name-wrapper__name">Fedoseev Nikolay</h1>
+				<h1 class="en name-wrapper__name">Fedoseev Nikolay</h1>
+				<h1 class="ru name-wrapper__name">Федосеев Николай</h1>
 				<p class="name-wrapper__position">front-end developer</p>
 			</a>
-			<nav class="navigation">
+			<nav class="en navigation">
 				<ul class="navigation-list">
 					<li><a href="index.html" id="about">about</a></li>
 					<li><a href="portfolio.html" id="portfolio">portfolio</a></li>
 					<li><a href="contact.html" id="contact">contact me</a></li>
 				</ul>
 			</nav>
+			<nav class="ru navigation">
+				<ul class="navigation-list">
+					<li><a href="index.html" id="about">обо мне</a></li>
+					<li><a href="portfolio.html" id="portfolio">портфолио</a></li>
+					<li><a href="contact.html" id="contact">связаться</a></li>
+					<li>
+				</ul>
+			</nav>
+
+					<div class="langSwitcher" id="langSwitcher">
+						<i class="unactive-lang-toggle">ru</i>
+						<i class="active-lang-toggle">en</i>
+					</div></li>
+			
 		</div>
 	</header>
 
 	<main class="page-content container">
-		<section class="page-content__about">
+		<section class="en page-content__about">
 			<h2 class="about-title">Hello, this is my personal portfolio site</h2>
 			<p class="about">I'm a begginer front-end developer</p>
 			<p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas explicabo iste quo maiores tempora, vitae excepturi ut sunt esse veritatis vel at modi praesentium commodi reprehenderit nam molestias sequi!</p>
-			<p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas explicabo iste quo maiores tempora, vitae excepturi ut sunt esse veritatis vel at modi praesentium commodi reprehenderit nam molestias sequi!</p>
+			<p class="about" data-lang="en">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas explicabo iste quo maiores tempora, vitae excepturi ut sunt esse veritatis vel at modi praesentium commodi reprehenderit nam molestias sequi!</p>
 			<p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quas explicabo iste quo maiores tempora, vitae excepturi ut sunt esse veritatis vel at modi praesentium commodi reprehenderit nam molestias sequi!</p>
 			<p class="about about-skills">My current skills (click to toggle tree branch):</p>
+		</section>
+
+		<section class="ru page-content__about">			
+			<h2 class="about-title">Привет, это мой персональный сайт-портфолио</h2>
+			<p class="about">Я начинающий фронт-енд разработчик</p>
+			<p class="about">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+			<p class="about">Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое. Лежа на панцирнотвердой спине, он видел, стоило ему приподнять голову, свой коричневый, выпуклый, разделенный дугообразными чешуйками живот, на верхушке которого еле держалось готовое вот-вот окончательно сползти одеяло.</p>
+			<p class="about about-skills">Мои навыки (клик на заголовке развернет ветку):</p>
+		</section>
 			
 			<ul class="tree">
 				<li>HTML+CSS
@@ -54,12 +78,12 @@
 
 			<p class="about__note">*just for loolz</p>
 
-		</section>
+		
 	</main>
 
-	<script type="text/javascript" src="js/main.js"></script>
+	
 	<script type="text/javascript" src="js/slider.js"></script>
-	<!-- <script type="text/javascript" src="js/changeContent.js"></script> -->
+	<script type="text/javascript" src="js/langSwitcher.js"></script>
 	<script type="text/javascript" src="js/tree.js"></script>
 </body>
 </html>

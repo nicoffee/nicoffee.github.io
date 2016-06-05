@@ -5,13 +5,18 @@ body {
 
     color: #000;
     text-transform: uppercase;
-    font-family: 'Josefin Sans', 'Poiret One', sans-serif;
+    font-family: '8784', sans-serif;
     font-size: 16px;
     background: #fff;
 }
 
+@font-face {
+    font-family: '8784'; /* Гарнитура шрифта */
+    src: url(../font/8784.ttf); /* Путь к файлу со шрифтом */
+}
+
 p {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .container {
@@ -368,4 +373,66 @@ p {
 .social-icons a:hover {
     color: #d9af41;
     font-size: 45px;
+}
+
+
+
+.langSwitcher {
+    position: relative;
+    border-radius: 5px;
+    top: 13px;
+    right: 36px;
+}
+
+.langSwitcher i {
+    position: absolute;
+
+    font-style: normal;
+    display: inline-block;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+
+    border-radius: 3px;
+    
+
+    transition-duration: 1s;
+    transition-property: all;
+
+
+    cursor: pointer;
+}
+
+i:first-child {
+    left: 0;
+}
+
+i:last-child {
+    right: 0;
+}
+
+.active-lang-toggle {
+    background: #fff;
+    color: #2e2230;
+}
+
+.unactive-lang-toggle:hover {
+    background: #fff;
+    color: #2e2230;
+}
+
+.page-content__about {
+    transition-duration: 3s;
+    transition-property: all;
+}
+
+.ru {
+    display: none;
+}
+
+.navigation-list .ru {
+    display: none;
 }

@@ -31,8 +31,6 @@ p {
 
 .section-2 {
    background: #e9ebde;
-   height: 100vh;
-   display: flex;
 }
 
 .container {
@@ -291,7 +289,11 @@ p {
 
 .works-wrap {
     display: flex;
-    margin-top: 250px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 150px 0;
 }
 
 .work {
@@ -300,6 +302,7 @@ p {
     width: 400px;
     height: 300px;
     opacity: 0.5;
+    margin: 40px 20px;
 
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     transition-duration: 1s;
@@ -347,6 +350,11 @@ p {
 
 .work-3 {
     background: url('../img/pink.png') 75% 0%;
+    background-size: cover;
+}
+
+.work-4 {
+    background: url('../img/datepicker.png') 75% 0%;
     background-size: cover;
 }
 

@@ -368,6 +368,23 @@ p {
     margin: 100px 0;
 }
 
+.social-block a {
+    font-size: 24px;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.social-block a:hover {
+    color: #d9af41;
+    text-decoration: underline;
+
+    transition-duration: 1s;
+    transition-property: all;
+}
+
+
 .social-mail a:hover {
     color: #d9af41;
     text-decoration: underline;

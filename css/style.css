@@ -1,4 +1,5 @@
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -39,7 +40,7 @@ h3 {
 
 p {
     margin: 0;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 30px;
 }
 
@@ -54,18 +55,40 @@ a {
     color: inherit;
 }
 
-header {
-    position: fixed;
-    z-index: 1;
+.main-header {
+    position: absolute;
     top: 0;
     width: 100%;
     color: #fff;
     box-shadow: 0 0 15px 5px #000;
     background: #ed4766;
-    animation:myfirst 60s;
-    -moz-animation:myfirst 60s infinite; /* Firefox */
-    -webkit-animation:myfirst 60s infinite; /* Safari and Chrome */
+    animation:myfirst 120s;
+    -moz-animation:myfirst 120s infinite; /* Firefox */
+    -webkit-animation:myfirst 120s infinite; /* Safari and Chrome */
 }
+
+.main-header_scrolled {
+    position: fixed;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.main-header_scrolled:hover {
+    opacity: 0.9;
+}
+
+.main-header_scrolled .social svg {
+    width: 25px;
+    height: 25px;
+}
+
+.main-header_scrolled .social a:hover svg {
+    transform: none;
+}
+
+ .main-header_scrolled .name-wrapper {
+     display: none;
+ }
 
 @-moz-keyframes myfirst /* Firefox */
 {
@@ -114,7 +137,9 @@ section {
     margin: 50px 0;
 }
 
-.main-header__inner {
+.main-header__inner,
+.main-footer__inner,
+.page-content__inner {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -122,19 +147,45 @@ section {
     max-width: 800px;
     margin: 0 auto;
     align-items: center;
-    padding: 19px 5%;
-}
-
-.page-content_inner {
-    max-width: 800px;
-    margin: 0 auto;
-    align-items: center;
     padding: 20px 5%;
 }
 
-.photo-wrapper {
+.page-content__inner {
+    display: block;
+}
+
+.main-footer__inner {
+    justify-content: center;
+}
+
+.page-content__header {
     display: flex;
     justify-content: space-around;
+    margin: 50px 0;
+}
+
+.page-content__header img {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.page-content__header h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.about__info a {
+    color: #ed4766;
+}
+
+.about__info a:hover {
+    text-decoration: underline;
+}
+
+.about__info p {
+    margin: 30px 0;
 }
 
 .company-logo__xsolla {
@@ -181,12 +232,6 @@ tr.job-places_xsolla:last-child {
     /*border-bottom: 1px solid #000;*/
 }
 
-.photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
 .name-wrapper__position {
     font-size: 10px;
 }
@@ -197,6 +242,7 @@ tr.job-places_xsolla:last-child {
 
 .navigation__list {
     display: flex;
+    text-transform: uppercase;
 }
 
 .navigation__list li {
@@ -214,7 +260,7 @@ tr.job-places_xsolla:last-child {
     cursor: pointer;
 }
 
-.navigation-list a {
+.navigation__list a {
     padding: 10px;
     margin: 0;
     text-decoration: none;
@@ -223,8 +269,8 @@ tr.job-places_xsolla:last-child {
     transition-property: all;
 }
 
-.navigation-list li:hover a {
-    background-color: #2e2230;
+.navigation__list a:hover {
+    text-decoration: underline;
 }
 
 .sections-wrapper {
@@ -243,33 +289,6 @@ tr.job-places_xsolla:last-child {
 
 section.skills h3 {
     text-align: center;
-}
-
-.slider .nav span {
-    opacity: 0.9;
-    background: #595271;
-    margin: 0 18px 0 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    overflow: hidden;
-    display: block;
-    float: left;
-    box-shadow: 0 1px 2px #000;
-}
-
-.slider .nav span.on {
-    background: #e9ebde;
-}
-
-.slide-desription {
-    display: block;
-}
-
-.slide-desription {
-    transition-duration: 1s;
-    transition-property: all;
 }
 
 .slide-desription {
@@ -307,11 +326,6 @@ section.skills h3 {
 
 .about__note {
     text-transform: none;
-}
-
-.about-title {
-    text-align: center;
-    font-size: 50px;
 }
 
 .about-skills {
@@ -400,7 +414,7 @@ section.skills h3 {
 .social svg {
     width: 50px;
     height: 50px;
-    transition: all 1s ease-out 0.5s;
+    transition: all 0.3s ease-out;
 }
 
 .social a:hover svg {
@@ -411,7 +425,7 @@ section.skills h3 {
 .social__link_fb,
 .social__link_gh
 path {
-    transition: all 1s ease-out 0.5s;
+    transition: fill 0.3s ease-out;
     fill: #fff;
 }
 
@@ -425,103 +439,6 @@ path {
 
 .social__link_gh:hover path {
     fill: #553c75;
-}
-
-.social-block {
-    margin: 100px 0;
-}
-
-.social-block a {
-    font-size: 24px;
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    color: black;
-}
-
-.social-block a:hover {
-    color: #d9af41;
-    text-decoration: underline;
-    transition-duration: 1s;
-    transition-property: all;
-}
-
-.social-mail a:hover {
-    color: #d9af41;
-    text-decoration: underline;
-    transition-duration: 1s;
-    transition-property: all;
-}
-
-.social-mail a {
-    text-decoration: none;
-    color: #000;
-    text-transform: none;
-    font-size: 20px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    color: #000;
-    text-transform: none;
-    font-size: 40px;
-    transition-duration: 1s;
-    transition-property: all;
-}
-
-.social-icons a:hover {
-    color: #d9af41;
-    font-size: 45px;
-}
-
-.langSwitcher {
-    position: relative;
-    border-radius: 5px;
-    top: 13px;
-    right: 36px;
-}
-
-.langSwitcher i {
-    position: absolute;
-    font-style: normal;
-    display: inline-block;
-    width: 30px;
-    line-height: 30px;
-    text-align: center;
-    vertical-align: top;
-    margin: 0;
-    padding: 0;
-    border-radius: 3px;
-    transition-duration: 1s;
-    transition-property: all;
-    cursor: pointer;
-}
-
-i:first-child {
-    left: 0;
-}
-
-i:last-child {
-    right: 0;
-}
-
-.active-lang-toggle {
-    background: #fff;
-    color: #2e2230;
-}
-
-.unactive-lang-toggle:hover {
-    background: #fff;
-    color: #2e2230;
-}
-
-.page-content__about {
-    transition-duration: 3s;
-    transition-property: all;
-}
-
-p.about {
-    text-transform: none;
 }
 
 section.skills {
@@ -552,32 +469,4 @@ ul.skills__list_other li {
     display: inline;
     margin: 0;
     margin-right: 5px;
-}
-
-mark.spoiler {
-    background: #facdaf;
-    color: #facdaf;
-}
-
-mark.spoiler:hover {
-    color: #000;
-}
-
-svg.star {
-    display: none;
-    margin-right: 1.5px;
-    stroke: #000;
-    stroke-width: 2;
-}
-
-svg.star:last-child {
-    margin-right: 15px;
-}
-
-svg.star path {
-    fill: yellow;
-}
-
-svg.star__empty path {
-    fill: none;
 }

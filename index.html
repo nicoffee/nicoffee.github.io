@@ -9,121 +9,178 @@
 
 <body>
     <header class="main-header">
-        <div class="container">
-            <a class="name-wrapper" href="index.html">
-                <h1 class="name-wrapper__name">Fedoseev Nikolay</h1>
-                <p class="name-wrapper__position">front-end developer</p>
-            </a>
+        <div class="main-header__inner">
+            <div class="name-wrapper" href="index.html">
+                <span class="name">Fedoseev Nikolay</span>
+                <p class="position">front-end developer</p>
+            </div>
+            <div class="social">
+                <a class="social__link social__link_vk" href="https://vk.com/id371242159">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.344 16.163h-1.867c-1.055 0-1.232-.601-2.102-1.469-.785-.785-1.22-.183-1.202.935.006.297-.141.534-.495.534-1.105 0-2.694.156-4.304-1.58-1.647-1.779-3.374-5.348-3.374-5.699 0-.208.172-.301.459-.301h1.898c.503 0 .545.249.686.568.584 1.331 1.981 4.002 2.354 2.511.214-.856.301-2.839-.615-3.01-.52-.096.396-.652 1.722-.652.33 0 .688.035 1.054.12.673.156.676.458.666.898-.034 1.666-.235 2.786.204 3.069.419.271 1.521-1.502 2.104-2.871.159-.378.191-.632.643-.632h2.322c1.216 0-.159 1.748-1.21 3.112-.847 1.099-.802 1.12.183 2.034.701.651 1.53 1.54 1.53 2.043 0 .238-.186.39-.656.39z"/></svg>
+                </a>
+                <a class="social__link social__link_fb" href="https://www.facebook.com/fedoseevn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
+                </a>
+                <a class="social__link social__link_gh" href="https://github.com/nicoffee">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+            </div>
             <nav class="navigation">
-                <ul class="navigation-list">
-                    <li><a class="about">about</a></li>
-                    <li><a class="portfolio">portfolio</a></li>
-                    <li><a class="contact">contact me</a></li>
+                <ul class="navigation__list">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact me</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main class="page-content">
-        <srction class="section section-1 container">
-            <article class="en page-content__about">
-                <h2 class="about-title">Hello, this is my personal portfolio site</h2>
-                <p class="about">Currently, I am a front-end developer at Xsolla</p>
+        <div class="page-content_inner">
+            <div class="photo-wrapper">
+                <img class="photo" src="img/photo.png" alt="me" />
+                <h1 class="about_title">Hello, this is my personal portfolio site</h1>
+            </div>
+            <article class="about">
+                <section>
+                    <h2>About me</h2>
+                    <p>Currently, I am a front-end developer at Xsolla. In our company we pay a lot of attantion to optimization and load speed of our products.</p>
+                </section>
+                <section class="section section__1">
+                    <h2>Experience</h2>
+                    <div class="table-wrapper">
+                        <table class="job-places">
+                            <tr>
+                                <th></th>
+                                <th>Company</th>
+                                <th>Position</th>
+                                <th>Period</th>
+                            </tr>
+                            <tr class="job-places_xsolla">
+                                <td>
+                                    <a href="https://xsolla.com/">
+                                        <img class="company-logo company-logo__xsolla" src="img/logo-xsolla.svg"></img>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="https://xsolla.com/">Xsolla</a>
+                                </td>
+                                <td>
+                                    Trainee
+                                </td>
+                                <td>
+                                    June 17, 2016 - July 17, 2016
+                                </td>
+                            </tr>
+                            <tr class="job-places_xsolla">
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    Junior Front-End Developer
+                                </td>
+                                <td>
+                                    July 17 2016 - Current Time
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="section section__2">
+                    <h2>My current technology stack:</h2>
+                    <div class="sections-wrapper">
+                        <section class="skills">
+                            <h3>HTML/CSS</h3>
+                            <ul class="skills__list">
+                                <li>Flexbox</li>
+                                <li>Responsive murkup</li>
+                                <li>BEM-naming</li>
+                            </ul>
+                        </section>
+                        <section class="skills">
+                            <h3>JavaScript</h3>
+                            <ul class="skills__list">
+                                <li>
+                                    <svg class="star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>JavaScript
+                                </li>
+                                <li>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>Typescript
+                                </li>
+                                <li>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>Angular
+                                    2
+                                </li>
+                            </ul>
+                        </section>
+                        <section class="skills">
+                            <h3>Developer tools:</h3>
+                            <ul class="skills__list">
+                                <li>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>Webpack
+                                </li>
+                                <li>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>
+                                    <svg class="star star__empty" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>Gulp
+                                </li>
+                                <li>PostCSS</li>
+                                <li>Git</li>
+                                <li>Jira</li>
+                            </ul>
+                        </section>
+                        <section class="skills">
+                            <h3>Other:</h3>
+                            <ul class="skills__list">
+                                <li>Intermediate level of english</li>
+                                <li>Photoshop</li>
+                                <li>AI</li>
+                            </ul>
+                        </section>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Thing i'm familiar and had more or less expirience with:</h2>
+                    <ul class="skills__list skills__list_other">
+                        <li>Backbone/Marionette,</li>
+                        <li>JQuery,</li>
+                        <li>NodeJS,</li>
+                        <li>Wordpress,</li>
+                        <li>PHP,</li>
+                        <li>Wordpress,</li>
+                        <li>MySQL,</li>
+                        <li>Capistrano,</li>
+                        <li>Grunt</li>
+                    </ul>
+                </section>
             </article>
-
-            <p>
-                What i can do or use right now:
-            </p>
-
-            <ul class="skill-tree">
-                <li>HTML/CSS
-                    <ul>
-                        <li>Flexbox</li>
-                        <li>Responsive murkup</li>
-                        <li>BEM-naming</li>
-
-                    </ul>
-                </li>
-                <li>JavaScript
-                    <ul>
-                        <li>ES6</li>
-                        <li>Typescript</li>
-                        <li>Angular 2</li>
-                    </ul>
-                </li>
-                <li>Developer things:
-                    <ul>
-                        <li>Webpack</li>
-                        <li>Gulp</li>
-                        <li>PostCSS</li>
-                        <li>Git</li>
-                        <li>Jira</li>
-                    </ul>
-                </li>
-                <li>Other stuff:
-                    <ul>
-                        <li>Intermediate level of english</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <p>
-                Thing i'm familiar and had more or less expirience with:
-            </p>
-
-            <ul class="skill-tree">
-                <li>Backbone/Marionette</li>
-                <li>JQuery</li>
-                <li>NodeJS</li>
-                <li>Wordpress</li>
-                <li>PHP</li>
-                <li>Wordpress</li>
-                <li>MySQL</li>
-                <li>Capistrano</li>
-                <li>Grunt</li>
-            </ul>
-        </section>
-
-        <section class="section section-2">
-            <div class="works-wrap">
-                <a class="work work-1" href="http://nicoffee.github.io/nerds/index.html">
-                    <p class="en work-desription">Fixed design, HTML+CSS+Js, IE10+</p>
-                </a>
-                <a class="work work-2" href="http://nicoffee.github.io/technomart/index.html">
-                    <p class="en work-desription">Fixed design, HTML+CSS+Js, IE10+</p>
-                </a>
-                <a class="work work-3" href="http://nicoffee.github.io/pink/index.html">
-                    <p class="en work-desription">Responsive design, mobile-first, BEM-naming, IE10+</p>
-                </a>
-            </div>
-        </section>
-
-        <section class="section section-3">
-            <div class="container">
-                <div class="social">
-                    <div class="social_block">
-                        <h1>Phone number:</h1>
-                        <a href="tel:+79024741260">+79024741260</a>
-                    </div>
-                    <div class="social_block social-mail">
-                        <h1>E-mail:</h1>
-                        <a href="mailto:fedoseevn@gmail.com">fedoseevn@gmail.com</a>
-                    </div>
-                    <div class="social_block social-icons">
-                        <h1>Social:</h1>
-                        <a class="social_block__vk" href="https://vk.com/id371242159"></a>
-                        <a class="social_block__facebook" href="https://www.facebook.com/fedoseevn"></a>
-                        <a class="social_block__github" href="https://github.com/nicoffee"></a>
-                        <!-- <a class="social_block__gitlab" href="https://github.com/nicoffee"></a> -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        </div>
     </main>
 
-    <script type="text/javascript" src="js/script.js"></script>
-    <script type="text/javascript" src="js/tree.js"></script>
+    <footer>
+        © 2016 Fedoseev Nikolay
+    </footer>
+
+    <!-- <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/tree.js"></script> -->
 
 </body>
 

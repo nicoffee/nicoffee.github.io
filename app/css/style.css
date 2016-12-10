@@ -79,7 +79,6 @@ a:focus {
 }
 
 .main-header_scrolled .main-header__inner {
-    flex-direction: column;
     padding: 0 5%;
 }
 

@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    min-width: 300px;
+    min-width: 400px;
     margin: 0;
     padding: 0;
     padding-top: 130px;
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 h1, .name {
     margin: 0;
     font-size: 36px;
-    line-height: 50px;
+    line-height: 60px;
     font-weight: normal;
 }
 
@@ -55,12 +55,17 @@ a {
     color: inherit;
 }
 
+a:focus {
+    outline: none;
+    border: none;
+}
+
 .main-header {
     position: absolute;
     top: 0;
     width: 100%;
     color: #fff;
-    box-shadow: 0 0 15px 5px #000;
+    box-shadow: 0px 1px 15px 3px rgba(0,0,0,0.75);
     background: #ed4766;
     animation:myfirst 120s;
     -moz-animation:myfirst 120s infinite; /* Firefox */
@@ -150,6 +155,10 @@ section {
     padding: 20px 5%;
 }
 
+.main-header__inner > * {
+    margin: 15px 0;
+}
+
 .page-content__inner {
     display: block;
 }
@@ -205,11 +214,6 @@ table.job-places {
     background-color: #fff;
 }
 
-/*table.job-places
-th, td {
-    border: 2px solid #84ad9b;
-}*/
-
 .job-places th {
     display: none;
     font-weight: normal;
@@ -261,7 +265,7 @@ tr.job-places_xsolla:last-child {
 }
 
 .navigation__list a {
-    padding: 10px;
+    padding: 0;
     margin: 0;
     text-decoration: none;
     color: #fff;
@@ -273,22 +277,11 @@ tr.job-places_xsolla:last-child {
     text-decoration: underline;
 }
 
-.sections-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 .wrapper {
     height: 350px;
     margin: 100px auto 0;
     position: relative;
     width: 700px;
-}
-
-section.skills h3 {
-    text-align: center;
 }
 
 .slide-desription {
@@ -412,61 +405,69 @@ section.skills h3 {
 }
 
 .social svg {
+    width: 100%;
+    height: 100%;
+}
+
+.social__link {
     width: 50px;
     height: 50px;
-    transition: all 0.3s ease-out;
 }
 
 .social a:hover svg {
     transform: scale(1.1);
 }
 
-.social__link_vk,
-.social__link_fb,
-.social__link_gh
-path {
+.social__link path {
     transition: fill 0.3s ease-out;
     fill: #fff;
 }
 
-.social__link_vk:hover path {
-    fill: #507299;
+.skills {
+    margin: 30px 0;
 }
 
-.social__link_fb:hover path {
-    fill: #3b5998;
-}
-
-.social__link_gh:hover path {
-    fill: #553c75;
-}
-
-section.skills {
-    width: 250px;
-    padding: 30px;
-    border-radius: 3px;
-    text-align: center;
-}
-
-ul.skills__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-ul.skills__list li {
+ul li {
     margin: 10px;
     display: flex;
     align-items: center;
 }
 
-ul.skills__list_other {
+ul {
     display: block;
 }
 
-ul.skills__list_other li {
+ul li {
     display: inline;
     margin: 0;
     margin-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding-top: 283px;
+    }
+
+    .main-header__inner {
+        flex-direction: column;
+    }
+
+    .name-wrapper {
+        text-align: center;
+    }
+
+    .page-content__header {
+        flex-direction: column;
+        align-items: center;
+        margin: 25px 0 50px;
+    }
+
+    .page-content__header img {
+        margin: 25px 0;
+    }
+
+    .job-places th:first-child,
+    .job-places td:first-child {
+        display: none;
+    }
 }

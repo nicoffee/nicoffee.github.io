@@ -78,6 +78,16 @@ a:focus {
     opacity: 0.5;
 }
 
+.main-header_scrolled .main-header__inner {
+    flex-direction: column;
+    padding: 0 5%;
+}
+
+.main-header_scrolled .social__link {
+    width: 25px;
+    height: 25px;
+}
+
 .main-header_scrolled:hover {
     opacity: 0.9;
 }
@@ -450,7 +460,6 @@ ul li {
 
     .main-header__inner {
         flex-direction: column;
-        padding: 0 5%;
     }
 
     .name-wrapper {
@@ -470,10 +479,5 @@ ul li {
     .job-places th:first-child,
     .job-places td:first-child {
         display: none;
-    }
-
-    .social__link {
-        width: 25px;
-        height: 25px;
     }
 }

@@ -178,15 +178,9 @@ section {
 
 .page-content__header {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     margin: 50px 0;
-}
-
-.page-content__header img {
-    flex-shrink: 0;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
 }
 
 .page-content__header h1 {
@@ -450,6 +444,15 @@ ul li {
     display: inline;
     margin: 0;
     margin-right: 5px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    background: url('../img/photo.jpg');
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: cover;
 }
 
 @media screen and (max-width: 600px) {

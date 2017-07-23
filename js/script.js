@@ -1,1 +1,0 @@
-"use strict";!function(){window.onscroll=function(){var e=document.querySelector(".main-header"),o=window.pageYOffset||document.documentElement.scrollTop;o&&o>100?e.classList.add("main-header_scrolled"):e.classList.remove("main-header_scrolled")}}();

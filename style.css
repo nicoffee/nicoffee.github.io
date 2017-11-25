@@ -1,3 +1,7 @@
+html, body {
+  min-height: 100vh;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -8,8 +12,33 @@ body {
   font-size: 2em;
   color: #101318;
   background: #fff;
-  min-width: 300px;
+  background-image: url(./bg.jpg);
+  background-size: cover;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-color: #ABBFA3;
 }
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;;
+  height: 50px;
+  width: 100%;
+  background: url('./2BnKTc1.gif');
+}
+
+@keyframes nyan {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100vw); }
+}
+
+header img {
+  height: 100%;
+  animation: nyan 3s infinite;
+}
+
+
 
 main {
   display: grid;
@@ -20,11 +49,12 @@ main {
 ul {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 0;
+  list-style: none;
 }
 
 ul li {
-  display: list-item;
   margin-bottom: 12px;
 }
 

@@ -8,14 +8,15 @@ body {
   align-items: center;
   min-width: 300px;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
   font-size: 2em;
   color: #101318;
   background: #fff;
+  background-image: url(./bg.jpg);
   background-size: cover;
   background-position-y: bottom;
   background-repeat: no-repeat;
-  font-weight: 100;
+  background-color: #ABBFA3;
 }
 
 header {
@@ -24,6 +25,7 @@ header {
   justify-content: flex-end;;
   height: 50px;
   width: 100%;
+  background: url('./2BnKTc1.gif');
 }
 
 @keyframes nyan {

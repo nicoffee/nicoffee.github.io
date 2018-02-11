@@ -1,0 +1,59 @@
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 300px;
+  margin: 0;
+  font-family: 'Forum', cursive;
+  font-size: 2em;
+  color: #101318;
+  background: #fff;
+  font-weight: 100;
+}
+
+main {
+  padding: 100px;
+}
+
+a {
+  color: #83868a;
+}
+
+a:hover {
+  color: #224a7e;
+}
+
+.social {
+  display: flex;
+  margin: 40px 0;
+  flex-direction: row;
+}
+
+.social_link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.social_link--gh {
+  background: url('./img/004-github-logo.svg');
+}
+
+.social_link--vk {
+  background: url('./img/003-vk.svg');
+}
+
+.social_link--lnkd {
+  background: url('./img/001-linkedin.svg');
+}
+
+.social_link--tw {
+  background: url('./img/002-twitter.svg');
+}

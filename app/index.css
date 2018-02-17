@@ -6,32 +6,66 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   min-width: 300px;
   margin: 0;
   font-family: 'Forum', cursive;
-  font-size: 2em;
+  font-size: 1.8em;
   color: #101318;
-  background: #fff;
+  background: #f5f5f5;
   font-weight: 100;
 }
 
+h2 {
+  margin: 0 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
 main {
-  padding: 100px;
+  padding: 25px 100px;
+  box-shadow: 0 5px 20px rgba(25, 17, 34, 0.1);
+  background: #fff;
+  border-radius: 10px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  margin: 10px 0;
+  list-style: none;
+}
+
+section {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+section div {
+  padding-left: 30px;
+  border-left: 3px solid #35b7f3;
 }
 
 a {
-  color: #83868a;
+  color: #03a9f4;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #224a7e;
+  color: #01579b;
 }
 
 .social {
   display: flex;
   margin: 40px 0;
   flex-direction: row;
+  justify-content: center;
 }
 
 .social_link {
@@ -40,20 +74,29 @@ a:hover {
   height: 40px;
   margin-right: 10px;
   text-decoration: none;
+  background-size: contain;
 }
 
 .social_link--gh {
-  background: url('./img/004-github-logo.svg');
+  background-image: url('./img/004-github-logo.svg');
 }
 
 .social_link--vk {
-  background: url('./img/003-vk.svg');
+  background-image: url('./img/003-vk.svg');
 }
 
 .social_link--lnkd {
-  background: url('./img/001-linkedin.svg');
+  background-image: url('./img/001-linkedin.svg');
 }
 
 .social_link--tw {
-  background: url('./img/002-twitter.svg');
+  background-image: url('./img/002-twitter.svg');
+}
+
+.social_link--hh {
+  background-image: url('./img/005-hh-logo.svg');
+}
+
+.primary {
+  font-size: 2.2rem;
 }

@@ -16,11 +16,14 @@ body {
   background: linear-gradient(to right, rgb(239, 239, 187), rgb(212, 211, 221));
 }
 
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+header h1 {
+  position: relative;
+}
+
+header h1 a {
+  position: absolute;
+  top: -30px;
+  right: -30px;
 }
 
 section {
@@ -68,7 +71,7 @@ a:hover {
   display: flex;
   margin: 40px 0;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .social_link {
@@ -101,7 +104,6 @@ a:hover {
 }
 
 .primary {
-  /* font-size: 2.2rem; */
   font-weight: 400;
 }
 

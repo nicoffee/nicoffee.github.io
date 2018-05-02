@@ -2,117 +2,169 @@
 <html lang="en">
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link href="./index.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Nikolay Fedoseev</title>
-    <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-102495081-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <link href="./index.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Nikolay Fedoseev</title>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-102495081-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 <body>
-    <header>
-        <h1>
-            Федосеев Николай
-            <a href="https://www.google.ru/search?q=css+is+awesome&oq=css+is+awesome&aqs=chrome..69i57j0l5.5416j0j7&sourceid=chrome&ie=UTF-8"
-                target="_blank">*</a>
-        </h1>
-        <h2>Front-End разработчик</h2>
+  <div class="inner">
+    <header id="header">
+      <h1>
+        Федосеев Николай
+        <a href="https://www.google.ru/search?q=css+is+awesome&oq=css+is+awesome&aqs=chrome..69i57j0l5.5416j0j7&sourceid=chrome&ie=UTF-8"
+          target="_blank">*</a>
+      </h1>
 
-        <p>Проживаю в Перми</p>
-        <p>Работаю в
-            <a href="https://xsolla.com/ru/">Xsolla</a>
-        </p>
-        <p>
-            <a href="https://github.com/nicoffee">Github</a>
-        </p>
-        <p>
-            <a href="https://perm.hh.ru/resume/0e0f975fff0330072f0039ed1f6b345a773566">Резюме</a>
-        </p>
     </header>
     <main>
+      <section>
+        <a href="#job_title">
+          <h2 id="job_title">Front-End разработчик</h2>
+        </a>
+        <p>Проживаю в Перми</p>
+        <p>Работаю в
+          <a href="https://xsolla.com/ru/">Xsolla</a>
+        </p>
+        <p>
+          <a href="https://github.com/nicoffee">Github</a>,
+          <a href="https://perm.hh.ru/resume/0e0f975fff0330072f0039ed1f6b345a773566">Резюме</a>
+        </p>
+      </section>
+      <section>
+        <a href="#skills">
+          <h2 id="skills">Навыки</h2>
+        </a>
+        <p>
+          <h4>JS Фреймворки и библиотеки:</h4>
+          <span class="primary">React</span>,
+          <span class="secondary">Preact,</span>
+          <span class="secondary">Backbone,</span>
+          <span class="secondary">Marionette,</span>
+          <span class="secondary">JQuery</span>
+        </p>
+        <p>
+          <h4>State management:</h4>
+          <span class="primary">Redux,</span>
+          <span class="secondary">MobX</span>
+        </p>
+        <p>
+          <h4>Redux middlewares:</h4>
+          <span class="primary">Redux thunk,</span>
+          <span class="secondary">Redux saga</span>
+        </p>
+        <p>
+          <h4>CSS Frameworks & Tools:</h4>
+          <span class="primary">PostCSS,</span>
+          <span class="primary">SASS,</span>
+          <span class="primary">Styled Components,</span>
+          <span class="primary">JSS,</span>
+          <span class="primary">BEM,</span>
+          <span class="secondary">Bootstrap</span>
+        </p>
+        <p>
+          <h4>Build tools:</h4>
+          <span class="primary">Webpack,</span>
+          <span class="secondary">Parcel,</span>
+          <span class="secondary">Gulp,</span>
+          <span class="secondary">Grunt</span>
+        </p>
+        <p>
+          <h4>Testing tools:</h4>
+          <span class="primary">Jest,</span>
+          <span class="primary">Enzyme,</span>
+          <span class="secondary">Mocha</span>
+        </p>
+        <p>
+          <h4>Other:</h4>
+          <span class="primary">NodeJS,</span>
+          <span class="primary">Express,</span>
+          <span class="secondary">Unix</span>
+        </p>
+      </section>
+      <section>
+        <a href="#open_source">
+          <h2 id="open_source">Open source</h2>
+        </a>
+        <div>
+          <p>Делал небольшие pull-реквесты в
+            <a href="http://www.material-ui.com/#/">Material-UI</a>:
+            <a href="https://github.com/mui-org/material-ui/pull/10792">#1</a>,
+            <a href="https://github.com/mui-org/material-ui/pull/10705">#2</a>,
+            <a href="https://github.com/mui-org/material-ui/pull/10645">#3</a>,
+            <a href="https://github.com/mui-org/material-ui/pull/11050">#4</a>
+          </p>
+          <p>И в
+            <a href="https://github.com/styleguidist/react-styleguidist">React Stylecguidist</a>:
+            <a href="https://github.com/styleguidist/react-styleguidist/pull/870">#1</a>
+          </p>
+        </div>
+      </section>
+      <section>
+        <a href="#pet_projects">
+          <h2 id="pet_projects">Pet projects</h2>
+        </a>
         <section>
-            <h2>Навыки</h2>
-            <ul>
-                <li>JS Фреймворки и библиотеки:
-                    <span class="primary">React</span>,
-                    <span class="secondary">Preact,</span>
-                    <span class="secondary">Backbone,</span>
-                    <span class="secondary">Marionette,</span>
-                    <span class="secondary">JQuery</span>
-                </li>
-                <li>State management:
-                    <span class="primary">Redux,</span>
-                    <span class="secondary">MobX</span>
-                </li>
-                <li>Redux middlewares:
-                    <span class="primary">Redux thunk,</span>
-                    <span class="primary">Redux actions,</span>
-                    <span class="primary">Redux saga</span>
-                </li>
-                <li>CSS Frameworks & Tools:
-                    <span class="primary">PostCSS,</span>
-                    <span class="primary">SASS,</span>
-                    <span class="primary">Styled Components,</span>
-                    <span class="primary">JSS,</span>
-                    <span class="primary">BEM,</span>
-                    <span class="secondary">Bootstrap</span>
-                </li>
-                <li>Build tools:
-                    <span class="primary">Webpack,</span>
-                    <span class="secondary">Parcel,</span>
-                    <span class="secondary">Gulp,</span>
-                    <span class="secondary">Grunt</span>
-                </li>
-                <li>Testing tools:
-                    <span class="primary">Jest,</span>
-                    <span class="primary">Enzyme,</span>
-                    <span class="secondary">Mocha</span>
-                </li>
-                <li>Other:
-                    <span class="primary">NodeJS,</span>
-                    <span class="primary">Express,</span>
-                    <span class="secondary">Unix</span>
-                </li>
-            </ul>
+          <h3>
+            SPA #1
+          </h3>
+          <a href="https://github.com/nicoffee/blog-demo">Репозиторий</a>,
+          <a href="https://react-redux-blog-demo.herokuapp.com">Демо</a>
+          <p>Блог с фейковым бэкендом (JSON-server).</p>
+          <p>
+            Использовал стандартную связку React, Redux, React-Router. Тестами покрыто 50% кода. Типизаций покрыто 100% кода (flow).
+            Для работы с сервером использовал Redux-Thunk, normalizr для нормализации ответов от сервера. Для стилизации
+            использовал Styled Components. Сборка осуществляется при помощи Webpack.
+          </p>
         </section>
         <section>
-            <h2>Open source</h2>
-            <div>
-                <p>Делал небольшие pull-реквесты в
-                    <a href="http://www.material-ui.com/#/">Material-UI</a>:
-                    <a href="https://github.com/mui-org/material-ui/pull/10792">#1</a>,
-                    <a href="https://github.com/mui-org/material-ui/pull/10705">#2</a>,
-                    <a href="https://github.com/mui-org/material-ui/pull/10645">#3</a>,
-                    <a href="https://github.com/mui-org/material-ui/pull/11050">#4</a>
-                </p>
-            </div>
+          <h3>
+            SPA #2
+          </h3>
+          <a href="https://github.com/nicoffee/shopping-cart">Репозиторий</a>,
+          <a href="https://computer-shop.herokuapp.com">Демо</a>
+          <p>Интернет-магазин с фейковым бэкендом (JSON-server).</p>
+          <p>
+            Использовал стандартную связку React, Redux, React-Router. Для стилизации использован Material-UI.
+          </p>
         </section>
         <section>
-            <h2>Pet projects</h2>
+          <a href="https://nicoffee.github.io/To-do/">ToDo лист</a>,
+          <a href="https://keyboard-simulator.herokuapp.com/">Клавиатурный тренажер</a>,
+          <a href="https://nicoffee.github.io/autocomplete/">Автокомплит</a>,
+          <a href="https://nicoffee.github.io/calculator/">Калькулятор</a>
+          <p>
+            Небольшие приложения, которые я писал для изучения React и Redux, а также в качетсве выполнения тестовых заданий. Исходный
+            код показывать стыдно, но можно найти на моейм гитхабе.
+          </p>
         </section>
+      </section>
     </main>
     <footer class="social">
-        <a class="social_link social_link--gh" href="https://github.com/nicoffee"></a>
-        <a class="social_link social_link--vk" href="https://vk.com/manontherocks"></a>
-        <a class="social_link social_link--lnkd" href="https://www.linkedin.com/in/nikolay-fedoseev-975b4713b/"></a>
-        <a class="social_link social_link--tw" href="https://twitter.com/nic0ffee"></a>
-        <a class="social_link social_link--hh" href="https://perm.hh.ru/resume/0e0f975fff0330072f0039ed1f6b345a773566"></a>
+      <a class="social_link social_link--gh" href="https://github.com/nicoffee"></a>
+      <a class="social_link social_link--vk" href="https://vk.com/manontherocks"></a>
+      <a class="social_link social_link--lnkd" href="https://www.linkedin.com/in/nikolay-fedoseev-975b4713b/"></a>
+      <a class="social_link social_link--tw" href="https://twitter.com/nic0ffee"></a>
+      <a class="social_link social_link--hh" href="https://perm.hh.ru/resume/0e0f975fff0330072f0039ed1f6b345a773566"></a>
     </footer>
+  </div>
 </body>
 
 </html>

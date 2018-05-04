@@ -125,10 +125,9 @@ a:hover {
   background-image: url('./img/005-hh-logo.svg');
 }
 
-span.primary {
-  font-weight: 400;
+section.skills span {
+    font-weight: 400;
+    color: rgb(133, 133, 133);
 }
 
-span.secondary {
-  color: rgb(133, 133, 133);
-}
+

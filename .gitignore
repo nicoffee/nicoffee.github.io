@@ -9,7 +9,7 @@
 !.vscode/extensions.json
 .history
 
-dist/
+app/dist/
 .cache/
 .DS_Store
 

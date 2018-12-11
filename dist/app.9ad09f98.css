@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 body {
   background-image: url('bg.c04a5f46.jpg');
   background-color: #EBB531;

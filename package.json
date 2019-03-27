@@ -5,7 +5,11 @@
   "repository": "https://github.com/nicoffee/nicoffee.github.io",
   "author": "nicoffee <fedoseevn@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "parcel app/index.html",
+    "build": "parcel build app/index.html"
+  },
   "devDependencies": {
-    "cssnano": "^4.1.7"
+    "parcel-bundler": "^1.11.0"
   }
 }

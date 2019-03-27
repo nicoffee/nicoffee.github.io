@@ -1,0 +1,106 @@
+:root {
+  --main-bg-color: #ffdd79;
+  --main-text-color: #333;
+  --main-title-color: #fa056f;
+  --main-select-color: #fff;
+}
+
+@font-face {
+  font-family: 'courier';
+  src: url(./assets/courier.ttf);
+}
+
+@font-face {
+  font-family: 'GillSans';
+  src: url(./assets/GillSans.ttf);
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: var(--main-bg-color);
+  font-family: 'courier', sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+main {
+  width: 650px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main-title-color);
+  font-weight: bold;
+}
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection {
+  background: var(--main-text-color);
+  color: var(--white);
+}
+
+p {
+  line-height: 26px;
+}
+
+a {
+  color: inherit;
+  transition: color 0.2s ease-out;
+}
+
+a:hover {
+  color: #fa056f;
+}
+
+a::selection,
+p::selection {
+  background: var(--main-title-color);
+  color: var(--white);
+}
+
+.header {
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-family: 'GillSans', sans-serif;
+  font-size: 44px;
+  line-height: 50px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills_badge {
+  background-color: var(--main-text-color);
+  padding: 5px 15px;
+  border-radius: 25px;
+  color: var(--main-select-color);
+  font-size: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 10px;
+}
+
+.skills_badge:not(:last-child) {
+  margin-right: 10px;
+}

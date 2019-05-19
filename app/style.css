@@ -1,8 +1,9 @@
 :root {
-  --main-bg-color: #ffdd79;
+  --main-bg-color: #fff;
   --main-text-color: #333;
-  --main-title-color: #fa056f;
+  --main-title-color: #222222;
   --main-select-color: #fff;
+  --secondary-color: #f7e438;
 }
 
 @font-face {
@@ -92,13 +93,14 @@ p::selection {
 }
 
 .skills_badge {
-  background-color: var(--main-text-color);
+  background-color: var(--secondary-color);
   padding: 5px 15px;
   border-radius: 25px;
-  color: var(--main-select-color);
+  color: var(--main-text-color);
   font-size: 16px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .skills_badge:not(:last-child) {

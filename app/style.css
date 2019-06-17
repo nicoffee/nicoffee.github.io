@@ -20,6 +20,7 @@ body {
 }
 
 body {
+  height: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -32,15 +33,17 @@ body {
   color: #333;
 }
 
-main {
-  width: 650px;
+@media screen and (max-width: 800px) {
+  body {
+    padding: 20px;
+  }
 }
 
-section {
+.screen-1 {
   text-align: center;
 }
 
-.aa {
+.title {
   text-align: center;
   line-height: 50px;
   animation-name: example;
@@ -49,38 +52,43 @@ section {
   font-size: 36px;
 }
 
-.hello {
-  opacity: 0;
-  animation: fadeIn ease-in 1;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-  /* animation-delay: 3s; */
+@media screen and (max-width: 800px) {
+  .title {
+    font-size: 26px;
+  }
 }
 
-.i-am {
+.appear-1 {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-delay: 1s;
+  animation-duration: 0.5s;
+}
+
+.appear-2 {
+  opacity: 0;
+  animation: fadeIn ease-in 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  animation-delay: 0.5s;
 }
 
 .appear-3 {
   opacity: 0;
   animation: fadeIn ease-in 1;
   animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-delay: 2s;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
 }
 
-.name {
+.link {
   text-decoration: none;
   color: var(--blue-color);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease-in-out;
 }
 
-.name:hover {
+.link:hover {
   border-bottom: 1px solid var(--blue-color);
 }
 
@@ -93,30 +101,27 @@ section {
   margin-right: 8px;
 }
 
-.social-icons svg {
+.social-icons img {
   width: 25px;
   height: 25px;
-  /* filter: grayscale(100%); */
-  opacity: 0.8;
+  opacity: 0.6;
   cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* .social-icons svg path {
-  fill: #999;
-} */
+@media screen and (max-width: 800px) {
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 .social-icons a:last-child {
   margin-right: 0;
 }
 
-/* .github-icon path {
-  fill: black;
-} */
-
-.social-icons svg:hover {
-  /* filter: grayscale(0); */
+.social-icons img:hover {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .bb {
@@ -126,7 +131,7 @@ section {
 
 @keyframes shadow-pulse {
   0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   }
 
   100% {
@@ -134,17 +139,27 @@ section {
   }
 }
 
+.skillset {
+  font-size: 18px;
+}
+
 .down-arrow {
+  display: flex;
+  align-items: center;
   position: absolute;
   bottom: 50px;
   left: 50%;
   margin-left: -10px;
-  border: 1px solid #999;
   border-radius: 50%;
   width: 20px;
-  padding: 10px 7px 5px;
+  height: 20px;
   animation: shadow-pulse 1s infinite;
   cursor: pointer;
+  background: url('./assets/down-arrow.svg');
+  background-position: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  padding: 5px;
 }
 
 .down-arrow path {
@@ -168,8 +183,13 @@ section {
   width: 650px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .inner {
+    width: auto;
+  }
 }
 
 .icon {
@@ -178,7 +198,6 @@ section {
   align-items: center;
   width: 40px;
   height: 40px;
-  /* border: 1px solid #999; */
   border-radius: 50%;
 }
 
@@ -189,4 +208,8 @@ section {
 
 .screen-2 {
   padding: 50px;
+}
+
+.about p {
+  padding: 0 100px;
 }
